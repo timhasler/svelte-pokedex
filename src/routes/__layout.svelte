@@ -1,5 +1,6 @@
 <script>
     import Navbar from '../components/navBar/Navbar.svelte'
+    export const prerender = true;
 </script>
 <svelte:head>
     <title>Svelte Kit Pokedex</title>
