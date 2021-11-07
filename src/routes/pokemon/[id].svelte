@@ -1,5 +1,5 @@
 <script context="module">
-    import { transformPokemon } from '../../transformers/pokemon.js'
+    import { transformPokemon } from '$lib/components/transformers/pokemon.js'
     
     export async function load({page, fetch}) {
         const id = page.params.id;
@@ -17,7 +17,7 @@
 </script>
 
 <script>
-    import StatCard from '../../components/statCard/StatCard.svelte';
+    import StatCard from '$lib/components/statCard/StatCard.svelte';
     export let pokemon;
 </script>
 

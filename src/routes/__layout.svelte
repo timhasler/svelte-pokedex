@@ -1,5 +1,5 @@
 <script>
-    import Navbar from '../components/navBar/Navbar.svelte'
+    import Navbar from '$lib/components/navBar/Navbar.svelte'
     export const prerender = true;
 </script>
 <svelte:head>

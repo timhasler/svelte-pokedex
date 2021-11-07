@@ -1,5 +1,5 @@
 <script context="module">
-    import PokeCard from '../components/pokeCard/PokeCard.svelte';
+    import PokeCard from '$lib/components/pokeCard/PokeCard.svelte';
 
     export async function load({ fetch }) {
         const url = `https://pokeapi.co/api/v2/pokemon?limit=151`;
