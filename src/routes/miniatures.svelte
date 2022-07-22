@@ -1,10 +1,9 @@
 <script context="module">
 
     export async function load({ fetch }) {
-        const url = `http://localhost/api/1/miniatures`;
+        const url = `http://52.56.131.239/api/1/miniatures`;
         const res = await fetch(url);
-        const data = await res.json();
-        const miniatures = data;
+        const miniatures = await res.json();
 
         return {
             props: {
