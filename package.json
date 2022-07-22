@@ -10,6 +10,7 @@
     "serve": "serve -p 8080 .\\build"
   },
   "devDependencies": {
+    "@iconify/svelte": "^2.2.1",
     "@sveltejs/adapter-static": "^1.0.0-next.21",
     "@sveltejs/kit": "next",
     "autoprefixer": "^10.4.0",

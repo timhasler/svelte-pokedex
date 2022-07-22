@@ -12,7 +12,7 @@
                 index + 1
             }.png`
         }));
-        
+
         return {
             props: {
                 pokemon
@@ -26,6 +26,7 @@
     export let pokemon = [];
     let searchTerm = "";
     let filteredPokemon = [];
+
     $: {
         if (searchTerm) {
             filteredPokemon = pokemon.filter((pokeman) => {
