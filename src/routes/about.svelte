@@ -1,1 +1,1 @@
-<p>This is a tester project to learn svelte</p>
+<p class="text-center my-8">This is a tester project to learn svelte</p>
