@@ -2,12 +2,13 @@
     import Icon from '@iconify/svelte';
     export let miniatures;
 </script>
+
 <table class="shadow mx-auto">
     <thead class="bg-blue-100">
     <th class="border px-8 py-4">
         Name
     </th>
-    <th class="border px-8 py-4">
+    <th class="border w-60 px-8 py-4">
         Progress
     </th>
     <th class="border px-8 py-4">
@@ -21,7 +22,11 @@
                 { miniature.name}
             </td>
             <td class="border px-8 py-4">
-                {miniature.progress}%
+                <div class="w-full bg-gray-200 rounded-full h-6 mb-4">
+                    <div class="bg-{miniature['colour']}-500 h-6 rounded-full" style="width: {miniature.progress}%">
+                        <div class="relative align-middle text-center">{ miniature['number_painted'] } / { miniature['count'] }</div>
+                    </div>
+                </div>
             </td>
             <td class="border px-8 py-4">
                 <div class="flex">
