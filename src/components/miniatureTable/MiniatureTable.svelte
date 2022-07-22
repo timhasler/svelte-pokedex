@@ -23,7 +23,7 @@
             </td>
             <td class="border px-8 py-4">
                 <div class="w-full bg-gray-200 rounded-full h-6 mb-4">
-                    <div class="bg-{miniature['colour']}-500 h-6 rounded-full" style="width: {miniature.progress}%">
+                    <div class=" h-6 rounded-full" style="background-color: { miniature.colour }; width: {miniature.progress}%">
                         <div class="relative align-middle text-center">{ miniature['number_painted'] } / { miniature['count'] }</div>
                     </div>
                 </div>
